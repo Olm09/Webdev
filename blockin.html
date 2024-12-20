@@ -4,55 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Webdev</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/global.css">
+  <title>-----BLOCKIN</title>
+
+  <link rel="stylesheet" href="/blockstart.css">
 </head>
 
-<body>
+<body style="font-family: sans-serif; font-size: 16px;">
 
 <!-- https://99designs.de/profiles/malzdesign/designs/1152694 -->
 
+  <blockstart>
+
 <!-- NAVIGATION -->
-  <hero-section>
-    <navigation>
 
-      <img class="logo" src="/assets/logoipsum-296.svg">
+    <block class="horizontal" style="justify-content: space-between;">
 
-      <nav-items>
-        <a style="text-decoration: none;" href="#">about</a>
-        <a style="text-decoration: none;" href="#">services</a>
-        <a style="text-decoration: none;" href="#">blog</a>
-        <a style="text-decoration: none;" href="#">open source</a>
-      </nav-items>
+      <shape style="--value: 2; --w: 50px; --h: 50px;">Logo</shape>
 
-      <div></div>
+      <block class="horizontal center">
+        <a style="text-decoration: none;" href="#">Item</a>
+        <a style="text-decoration: none;" href="#">Item</a>
+        <a style="text-decoration: none;" href="#">Item</a>
+        <a style="text-decoration: none;" href="#">Item</a>
+      </block>
 
-      <a href="#">
-    <button class="cta-button">&rarr; Work with me</button>
-  </a>
-    </navigation>
+      <button class="center">Work with me</button>
 
+    </block>
+    <hr>
 <!-- HERO -->
 
-    <hero>
-
-      <hero-text>
-
-          <title>Hey, I'm Charles</title>
-          <subtitle>I help you develop cool things on the web. If you
-          want to work with me, click the button!</subtitle>
-
-        <button class="cta-button">&rarr; Work with me</button>
-      </hero-text>
-      <img src="/assets/images/image_hero.jpg">
-
-    </hero>
-  </hero-section>
-
-<!-- ABOUT ME -->
+    <block class="horizontal center" style="justify-content: space-between; column-gap: 10rem; width: 60vw;">
+      <block>
+        <div>
+          <h1>Hey, I'm Charles</h1>
+          <p>I help you develop cool things on the web.</p>
+        </div>
+        <button style="align-self: start;">Work with me</button>
+      </block>
+      <shape style="--value: 3; --w: 400px; --h: 300px;">Image</shape>
+    </block>
 <hr>
     <block class="horizontal center" style="justify-content: space-between; width: 60vw;">
 
@@ -214,7 +205,7 @@
 
     </block>
 
-
+  </blockstart>
 
 </body>
 </html>

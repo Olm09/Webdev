@@ -1,0 +1,111 @@
+:root {
+
+  --logo-blue: hsl(210, 100%, 49%);
+  --logo-blue-dark: hsl(210, 100%, 33%);
+  --value-scale: 12%;
+  --value0: hsl(0, 0%, calc(0 * var(--value-scale)));
+  --value1: hsl(0, 0%, calc(1 * var(--value-scale)));
+  --value2: hsl(0, 0%, calc(2 * var(--value-scale)));
+  --value3: hsl(0, 0%, calc(3 * var(--value-scale)));
+  --value4: hsl(0, 0%, calc(4 * var(--value-scale)));
+  --value5: hsl(0, 0%, calc(5 * var(--value-scale)));
+  --value6: hsl(0, 0%, calc(6 * var(--value-scale)));
+  --value7: hsl(0, 0%, calc(7 * var(--value-scale)));
+  --value8: hsl(0, 0%, calc(8 * var(--value-scale)));
+  --value9: hsl(0, 0%, calc(9 * var(--value-scale)));
+}
+
+* {
+  margin: 0;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+body * {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+}
+
+hero-section {
+  height: 100vh;
+}
+
+navigation {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+navigation .logo {
+  width: 50px;
+  height: 50px;
+}
+
+navigation nav-items {
+  flex-direction: row;
+}
+
+navigation nav-items a {
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+navigation nav-items a:hover {
+  color: var(--value3);
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
+}
+
+.cta-button {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem;
+  background-color: var(--logo-blue);
+  border: none;
+  align-self: start;
+}
+
+.cta-button:hover {
+  background-color: var(--logo-blue-dark);
+}
+
+hero {
+  margin-top: 10vh;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+hero-text {
+  height: 100%;
+  max-width: 30%;
+  justify-content: space-around;
+}
+
+hero title {
+  font-size: 3rem;
+}
+
+hero subtitle {
+  font-size: 1.2rem;
+}
+
+hero img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
