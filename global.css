@@ -127,7 +127,7 @@ hero-footer links a {
   text-transform: uppercase;
 }
 
-content, services {
+about-content, services {
   margin-top: 10rem;
 }
 
@@ -162,7 +162,7 @@ body h2 {
 }
 
 
-services h2 {
+blog h2, services h2, opensource h2 {
   align-self: center;
 }
 
@@ -175,22 +175,22 @@ services about {
 }
 
 blog {
-  align-items: center;
+  padding: 0 15vw;
+  margin-bottom: 10rem;
 }
 
 
-blog container {
+blog post-container {
   flex-direction: row;
-  justify-content: center;
+
   height: 20rem;
-  padding: 5rem;
 }
 
-blog container post {
-  height: 100%;
-  width: 100%;
-  padding: 5rem;
+blog post-container post {
   justify-content: space-between;
+ width: 100%;
+ padding: 2rem;
+
 
 }
 
