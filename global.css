@@ -13,6 +13,8 @@
   --value7: hsl(0, 0%, calc(7 * var(--value-scale)));
   --value8: hsl(0, 0%, calc(8 * var(--value-scale)));
   --value9: hsl(0, 0%, calc(9 * var(--value-scale)));
+
+  --soft-border: 0 0 10px 0 var(--value6);
 }
 
 * {
@@ -44,7 +46,7 @@ navigation {
   padding: 2rem;
 }
 
-navigation .logo {
+.logo {
   width: 50px;
   height: 50px;
 }
@@ -214,11 +216,49 @@ opensource element {
   background-color: var(--value9);
   justify-content: space-between;
   margin: 0 1rem;
-  box-shadow: 0 0 10px 0 var(--value6);
+  box-shadow: var(--soft-border);
 }
 
 opensource h3 {
   font-weight: 100;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+cta, footer {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+cta {
+  padding: 10rem 20vw;
+}
+
+cta text h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+footer {
+  padding: 2rem 20vw;
+  background-color: var(--value8);
+
+}
+
+footer copy, social {
+  flex-direction: row;
+
+}
+
+footer text {
+  margin-left: 1rem;
+}
+
+footer span {
+  font-size: 0.8rem;
+}
+
+footer social a {
+  padding: 1rem;
 }
