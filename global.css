@@ -131,11 +131,12 @@ hero img {
 
 hero-footer {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 hero-footer links {
   flex-direction: row;
+  flex-grow: 0.79;
 }
 
 hero-footer links a {
