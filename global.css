@@ -55,7 +55,8 @@ hero-section {
 
 navigation {
   flex-direction: row;
-  justify-content: space-between;
+
+
   padding: 2rem;
 }
 
@@ -66,6 +67,7 @@ navigation {
 
 navigation nav-items {
   flex-direction: row;
+
 }
 
 navigation nav-items a {
@@ -73,6 +75,17 @@ navigation nav-items a {
   text-transform: uppercase;
 }
 
+img-container {
+  flex-grow: 1;
+}
+
+nav-items {
+  flex-grow: 3;
+}
+
+button-container {
+  flex-grow: 0;
+}
 
 
 
